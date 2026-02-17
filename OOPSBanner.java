@@ -1,15 +1,26 @@
+/**
+ * UC4 – OOPS Banner using Array and Loop
+ * Uses String array and for-each loop.
+ */
+
 public class OOPSBanner {
 
     public static void main(String[] args) {
 
-        System.out.println(" *****   " + " *****   " + " ******  " + " ***** ");
-        System.out.println("*     *  " + "*     *  " + "*     *  " + "*     *");
-        System.out.println("*     *  " + "*     *  " + "*     *  " + "*      ");
-        System.out.println("*     *  " + "*     *  " + "******   " + " ***** ");
-        System.out.println("*     *  " + "*     *  " + "*        " + "      *");
-        System.out.println("*     *  " + "*     *  " + "*        " + "*     *");
-        System.out.println(" *****   " + " *****   " + "*        " + " ***** ");
+        String[] lines = new String[7];
+
+        lines[0] = String.join(" ", " *** ", " *** ", " ***** ", " ***** ");
+        lines[1] = String.join(" ", "*   *", "*   *", "*     *", "*     ");
+        lines[2] = String.join(" ", "*   *", "*   *", "*     *", "*     ");
+        lines[3] = String.join(" ", "*   *", "*   *", "***** ", " ***** ");
+        lines[4] = String.join(" ", "*   *", "*   *", "*      ", "     *");
+        lines[5] = String.join(" ", "*   *", "*   *", "*      ", "*    *");
+        lines[6] = String.join(" ", " *** ", " *** ", "*      ", " **** ");
+
+        for (String line : lines) {
+            System.out.println(line);
+        }
 
     }
-
 }
+
