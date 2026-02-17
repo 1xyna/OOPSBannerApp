@@ -1,21 +1,22 @@
 /**
- * UC4 – OOPS Banner using Array and Loop
- * Uses String array and for-each loop.
+ * UC5 – OOPS Banner using Inline Array Initialization
  */
 
 public class OOPSBanner {
 
     public static void main(String[] args) {
 
-        String[] lines = new String[7];
+        String[] lines = {
 
-        lines[0] = String.join(" ", " *** ", " *** ", " ***** ", " ***** ");
-        lines[1] = String.join(" ", "*   *", "*   *", "*     *", "*     ");
-        lines[2] = String.join(" ", "*   *", "*   *", "*     *", "*     ");
-        lines[3] = String.join(" ", "*   *", "*   *", "***** ", " ***** ");
-        lines[4] = String.join(" ", "*   *", "*   *", "*      ", "     *");
-        lines[5] = String.join(" ", "*   *", "*   *", "*      ", "*    *");
-        lines[6] = String.join(" ", " *** ", " *** ", "*      ", " **** ");
+            String.join(" ", " *** ", " *** ", " ***** ", " ***** "),
+            String.join(" ", "*   *", "*   *", "*     *", "*     "),
+            String.join(" ", "*   *", "*   *", "*     *", "*     "),
+            String.join(" ", "*   *", "*   *", "***** ", " ***** "),
+            String.join(" ", "*   *", "*   *", "*      ", "     *"),
+            String.join(" ", "*   *", "*   *", "*      ", "*    *"),
+            String.join(" ", " *** ", " *** ", "*      ", " **** ")
+
+        };
 
         for (String line : lines) {
             System.out.println(line);
