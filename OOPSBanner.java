@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 public class OOPSBanner {
 
     public static String[] getOPattern() {
@@ -48,3 +49,32 @@ public class OOPSBanner {
 
     }
 }
+=======
+/**
+ * UC5 – OOPS Banner using Inline Array Initialization
+ */
+
+public class OOPSBanner {
+
+    public static void main(String[] args) {
+
+        String[] lines = {
+
+            String.join(" ", " *** ", " *** ", " ***** ", " ***** "),
+            String.join(" ", "*   *", "*   *", "*     *", "*     "),
+            String.join(" ", "*   *", "*   *", "*     *", "*     "),
+            String.join(" ", "*   *", "*   *", "***** ", " ***** "),
+            String.join(" ", "*   *", "*   *", "*      ", "     *"),
+            String.join(" ", "*   *", "*   *", "*      ", "*    *"),
+            String.join(" ", " *** ", " *** ", "*      ", " **** ")
+
+        };
+
+        for (String line : lines) {
+            System.out.println(line);
+        }
+
+    }
+}
+
+>>>>>>> 5da266814b4849756344d799e653cdc1f2d50427
