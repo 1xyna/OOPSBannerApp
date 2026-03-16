@@ -1,27 +1,48 @@
-/**
- * UC5 – OOPS Banner using Inline Array Initialization
- */
-
 public class OOPSBanner {
 
-    public static void main(String[] args) {
-
-        String[] lines = {
-
-            String.join(" ", " *** ", " *** ", " ***** ", " ***** "),
-            String.join(" ", "*   *", "*   *", "*     *", "*     "),
-            String.join(" ", "*   *", "*   *", "*     *", "*     "),
-            String.join(" ", "*   *", "*   *", "***** ", " ***** "),
-            String.join(" ", "*   *", "*   *", "*      ", "     *"),
-            String.join(" ", "*   *", "*   *", "*      ", "*    *"),
-            String.join(" ", " *** ", " *** ", "*      ", " **** ")
-
+    public static String[] getO() {
+        return new String[] {
+            " ***** ",
+            "*     *",
+            "*     *",
+            "*     *",
+            "*     *",
+            "*     *",
+            " ***** "
         };
+    }
 
-        for (String line : lines) {
-            System.out.println(line);
+    public static String[] getP() {
+        return new String[] {
+            "****** ",
+            "*     *",
+            "*     *",
+            "****** ",
+            "*      ",
+            "*      ",
+            "*      "
+        };
+    }
+
+    public static String[] getS() {
+        return new String[] {
+            " ******",
+            "*      ",
+            "*      ",
+            " ***** ",
+            "      *",
+            "      *",
+            "****** "
+        };
+    }
+
+    public static void main(String[] args) {
+        String[] o = getO();
+        String[] p = getP();
+        String[] s = getS();
+
+        for (int i = 0; i < 7; i++) {
+            System.out.println(o[i] + "  " + o[i] + "  " + p[i] + "  " + s[i]);
         }
-
     }
 }
-
