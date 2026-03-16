@@ -1,48 +1,58 @@
+/**
+ * UC6 – OOPS Banner using Static Methods
+ */
+
 public class OOPSBanner {
 
-    public static String[] getO() {
+    // Method for letter O
+    public static String[] getOPattern() {
         return new String[] {
-            " ***** ",
-            "*     *",
-            "*     *",
-            "*     *",
-            "*     *",
-            "*     *",
-            " ***** "
+            " *** ",
+            "*   *",
+            "*   *",
+            "*   *",
+            "*   *",
+            "*   *",
+            " *** "
         };
     }
 
-    public static String[] getP() {
+    // Method for letter P
+    public static String[] getPPattern() {
         return new String[] {
-            "****** ",
-            "*     *",
-            "*     *",
-            "****** ",
-            "*      ",
-            "*      ",
-            "*      "
+            "**** ",
+            "*   *",
+            "*   *",
+            "**** ",
+            "*    ",
+            "*    ",
+            "*    "
         };
     }
 
-    public static String[] getS() {
+    // Method for letter S
+    public static String[] getSPattern() {
         return new String[] {
-            " ******",
-            "*      ",
-            "*      ",
-            " ***** ",
-            "      *",
-            "      *",
-            "****** "
+            " ****",
+            "*    ",
+            "*    ",
+            " *** ",
+            "    *",
+            "    *",
+            "**** "
         };
     }
 
     public static void main(String[] args) {
-        String[] o = getO();
-        String[] p = getP();
-        String[] s = getS();
 
-        for (int i = 0; i < 7; i++) {
+        String[] o = getOPattern();
+        String[] p = getPPattern();
+        String[] s = getSPattern();
+
+        // Print OOPS
+        for (int i = 0; i < o.length; i++) {
             System.out.println(o[i] + "  " + o[i] + "  " + p[i] + "  " + s[i]);
         }
+
     }
 }
